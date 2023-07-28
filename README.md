@@ -4,6 +4,8 @@ Front d'un site pour une entreprise qui propose des formations, codé avec Angul
 
 Membres du projet : Zakaria, Sylvain, Anthony
 
+Travail sur la branche dev
+
 
 # ITTrainingFront
 
