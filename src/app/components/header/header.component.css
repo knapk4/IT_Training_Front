@@ -1,0 +1,28 @@
+.header {
+    background-color: #007bff; /* Nuance de bleu */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+  
+    .logo {
+      /* Ajoutez ici les styles pour le logo */
+    }
+  
+    .search-bar {
+      /* Ajoutez ici les styles pour la barre de recherche */
+    }
+  
+    .nav-links {
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+    }
+  
+    .user-link {
+      /* Ajoutez ici les styles pour le lien Espace Utilisateur */
+    }
+  }
