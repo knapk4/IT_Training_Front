@@ -1,72 +1,89 @@
-.header {
-    background-color: #007bff; /* Nuance de bleu */
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-    .logo {
-      margin-right: 10px;
-      img {
-        height: 40px; /* Ajustez la taille de votre logo */
-      }
-    }
-  
-    .search-bar {
-      flex: 1;
-      input {
-        padding: 8px;
-        width: 100%;
-        border: none;
-        border-radius: 20px; /* Bordures arrondies pour un style plus moderne */
-        font-size: 16px;
-        background-color: #f0f4f8; /* Couleur de fond gris clair pour le champ de recherche */
-        color: #333; /* Couleur du texte */
-        outline: none;
-  
-        &::placeholder {
-          color: #999; /* Couleur du texte de l'indication de placeholder */
-        }
-      }
-    }
-  
-    .nav-links {
-      display: flex;
-      align-items: center;
-  
-      a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: #0056b3; /* Nuance de bleu plus sombre au survol */
-        }
-  
-        & + a {
-          margin-left: 20px; /* Marge entre les liens */
-        }
-      }
-    }
-  
-    .user-link {
-      margin-left: auto;
-  
-      a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        background-color: #0056b3; /* Nuance de bleu plus sombre */
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: #003b80; /* Nuance de bleu encore plus sombre au survol */
-        }
-      }
-    }
+.navbar {
+  background-color: #04549c;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: auto;
+}
+
+.navbar-logo img {
+  height: 6em;
+ width: auto;
+ display: inline-block; /* Assurez-vous que le div entoure l'image */
+ transform: scale(2.5); /* Augmentez la valeur de scale pour agrandir davantage */
+ transform-origin: left;
+ }
+ 
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-toggle-label {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
   }
-  
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 5px 0;
+  }
+
+  .navbar-connexion {
+    margin-top: 10px;
+  }
+
+  .navbar-toggle-label {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .navbar-toggle-label i {
+    vertical-align: middle;
+  }
+
+  #navbar-toggle:checked ~ .navbar-menu {
+    display: flex;
+  }
+}
