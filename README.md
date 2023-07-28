@@ -1,3 +1,10 @@
+IT_TRAINING_Front
+
+Front d'un site pour une entreprise qui propose des formations, codé avec Angular.
+
+Membres du projet : Zakaria, Sylvain, Anthony
+
+
 # ITTrainingFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
