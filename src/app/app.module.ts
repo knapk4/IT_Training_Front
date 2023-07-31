@@ -9,7 +9,6 @@ import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './commons/footer/footer.component';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { FormationCardComponent } from './pages/formation-card/formation-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { FormationCardComponent } from './pages/formation-card/formation-card.co
     FooterComponent,
     NotFoundComponent,
     HomePageComponent,
-    FormationCardComponent
   ],
   imports: [
     BrowserModule,

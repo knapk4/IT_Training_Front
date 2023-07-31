@@ -1,0 +1,70 @@
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+    margin-top: 65px;
+  }
+  
+  .accueil-image {
+    width: 100%;
+    max-width: 100%;
+    text-align: center; /* Centre l'image horizontalement */
+    margin-top: 20px; /* Ajoute un espace au-dessus de l'image */
+  }
+  
+  .image-accueil {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grid-item {
+    flex-basis: 24%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.2);
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  .grid-item:hover img {
+    animation: zoomIn 0.3s ease-in-out forwards;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  .image-responsive {
+    width: 100%;
+    height: auto;
+    margin-top: 85px;
+  }
+  
