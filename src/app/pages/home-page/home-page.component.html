@@ -6,8 +6,10 @@
   </section>
   <section>
     <img src="assets/somme.png" alt="somme" class="image-responsive">
-
   </section>
+  <ul>
+    <li *ngFor="let specialite of specialites">{{ specialite.nom }}</li>
+  </ul>
   <section class="accueil">
     <div class="grid-container">
       <a routerLink="/page1" class="grid-item">
@@ -23,6 +25,7 @@
         <img src="assets/domaine1.png" alt="Image 4">
       </a>
     </div>
+
   </section>
   
   
