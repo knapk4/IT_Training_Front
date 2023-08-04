@@ -1,0 +1,120 @@
+image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .page-container {
+    /* Fond d'écran bleu pour le conteneur principal */
+    min-height: 100vh; /* Pour que le conteneur prenne toute la hauteur de l'écran */
+    padding: 20px; /* Ajoute un espace autour du contenu pour éviter qu'il ne touche les bords de l'écran */
+  }
+  
+  
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  
+    .dropdown {
+      position: relative;
+      display: inline-block;
+  
+      .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+  
+        button {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          cursor: pointer;
+        }
+  
+        button:hover {
+          background-color: #f1f1f1;
+        }
+      }
+  
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+  
+  
+  .themes-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+  
+    
+      button {
+        margin: 10px;
+      }
+    
+      .themes-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    
+        .theme-card {
+          border: 1px solid #ccc;
+          padding: 10px;
+          border-radius: 8px;
+          background-color: white;
+  
+          @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        
+          .formation-image {
+            max-width: 200px; /* Définissez la largeur souhaitée pour l'image */
+            max-height: 150px;
+  
+    
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+    
+          h3 {
+            margin: 5px 0;
+          }
+    
+          p {
+            margin: 5px 0;
+          }
+          @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        
+  
+  
+  
+        }
+      }
+    }
+  }

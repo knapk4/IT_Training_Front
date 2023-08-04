@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="sidebar">
+      <h1>MON COMPTE</h1>
+      <div class="sidebar-sections">
+        <div class="sidebar-section" (click)="showFormations = true; showInformations = false; showAssiduite = false;">
+          Mes formations
+        </div>
+        <div class="sidebar-section" (click)="showFormations = false; showInformations = true; showAssiduite = false;">
+          Mes informations
+        </div>
+        <div class="sidebar-section" (click)="showFormations = false; showInformations = false; showAssiduite = true;">
+          Assiduité
+        </div>
+      </div>
+    </div>
+  
+    <div class="main-content">
+      <div class="centered-content">
+        <div class="section" *ngIf="showFormations">
+          <h2>Mes formations</h2>
+          <div class="formation" *ngFor="let formation of formations">
+            <p>{{ formation.name }}</p>
+            <p>Status: {{ formation.finished ? 'Fini' : 'En cours' }}</p>
+          </div>
+        </div>
+  
+        <div class="section" *ngIf="showInformations">
+          <h2>Mes informations</h2>
+          <div class="form">
+            <label for="password">Nouveau mot de passe:</label>
+            <input type="password" id="password" [(ngModel)]="newPassword" />
+  
+            <button (click)="savePassword()">Sauvegarder</button>
+          </div>
+        </div>
+  
+        <div class="section" *ngIf="showAssiduite">
+          <h2>Assiduité</h2>
+          <div class="presence" *ngFor="let presence of assiduite">
+            <p>Date: {{ presence.date | date }}</p>
+            <p>Statut: {{ presence.present ? 'Présent' : 'Absent' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

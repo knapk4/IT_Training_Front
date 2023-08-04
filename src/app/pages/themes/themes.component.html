@@ -1,0 +1,45 @@
+<p></p>
+<p></p>
+ 
+    <div class="image-container">
+      <img src="assets/themes.png" alt="Responsive Image" class="responsive-image" />
+    </div>
+
+    <div class="page-container">
+
+<div class="menu">
+  <button (click)="toggleShowAllFormations()">
+    {{ showAll ? 'Cacher les formations' : 'Afficher toutes les formations' }}
+  </button>
+  <div class="dropdown">
+    <button class="dropbtn">Trier par</button>
+    <div class="dropdown-content">
+      <button (click)="sortByName()">Nom</button>
+      <button (click)="sortByPrice()">Prix</button>
+      <button (click)="sortByDate()">Date</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class="themes-container">
+    <div class="themes-list">
+      <div *ngFor="let formation of visibleFormations" class="theme-card">
+        <!-- Afficher les détails de la formation ici (image, nom, prix, date) -->
+        <img [src]="formation.imageUrl" alt="Image de la formation" class="formation-image" />
+        <h3>{{ formation.nom }}</h3>
+        <p>Prix : {{ formation.prix }}</p>
+        <p>Date de début : {{ formation.dateDebut }}</p>
+        <p>Date de fin : {{ formation.dateFin }}</p>
+      </div>
+    </div>
+  </div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

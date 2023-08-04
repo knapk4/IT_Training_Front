@@ -1,0 +1,31 @@
+
+<div class="main-container">
+    <div class="register-container" *ngIf="showLoginForm">
+      <h1>Page d'inscription</h1>
+      <form (ngSubmit)="onRegisterSubmit()">
+        <label for="username">Nom:</label>
+        <input type="text" id="username" required>
+    
+        <label for="firstname">Prénom:</label>
+        <input type="text" id="firstname" required>
+    
+        <label for="birthdate">Date de naissance:</label>
+        <input type="date" id="birthdate" required>
+    
+        <label for="address">Adresse:</label>
+        <input type="text" id="address" required>
+    
+        <label for="postalCode">Code postal:</label>
+        <input type="text" id="postalCode" required>
+    
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Si vous ne voulez pas recevoir nos offres commerciales et newsletters, cochez ici.</label>
+        </div>
+    
+        <button type="submit">S'inscrire</button>
+      </form>
+      <a routerLink="/login">Se connecter</a>
+      <a routerLink="/forgot-password">Mot de passe oublié</a>
+    </div>
+    </div>

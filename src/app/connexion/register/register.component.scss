@@ -1,0 +1,70 @@
+.main-container {
+    background-color:#eee6d8; 
+    padding: 20px; 
+  }
+  
+  .register-container {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  background-color: #04549c;
+  color: #fff;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      label {
+        margin-bottom: 5px;
+      }
+  
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+  
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+  
+      div.checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+      }
+    }
+  
+    a {
+      display: block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
