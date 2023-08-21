@@ -67,4 +67,31 @@
     height: auto;
     margin-top: 1px;
   }
+  .partner-item img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .partners {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap; /* Empêche les éléments de passer à la ligne */
+  }
+
+  
+  
+  .partner-item {
+    flex: 0 0 15%;
+    transition: transform 0.5s ease-in-out;
+    animation: scrollImages 20s linear infinite; /* Animation de défilement */
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%); /* Fait défiler les éléments vers la gauche */
+    }
+  }
   
