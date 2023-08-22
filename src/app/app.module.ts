@@ -17,6 +17,7 @@ import { LoginComponent } from './connexion/login/login.component';
 import { ForgotPasswordComponent } from './connexion/forgot-password/forgot-password.component';
 import { RegisterComponent } from './connexion/register/register.component';
 import { ClientComponent } from './dashboard/client/client.component';
+import { SurthemesComponent } from './pages/surthemes/surthemes.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ClientComponent } from './dashboard/client/client.component';
     ForgotPasswordComponent,
     RegisterComponent,
     ClientComponent,
+    SurthemesComponent,
 
   ],
   imports: [
