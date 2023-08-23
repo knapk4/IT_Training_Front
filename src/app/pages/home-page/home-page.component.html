@@ -1,45 +1,64 @@
 
 <section class="accueil">
-    <div class="accueil-image">
-      <img class="image-accueil responsive-image" src="assets/naccueil.png" alt="Image d'accueil">
-    </div>
-  </section>
-  <section>
-    <img src="assets/somme.png" alt="somme" class="image-responsive">
-  </section> 
-  <ul>
-    <li *ngFor="let specialite of specialites">{{ specialite.nom }}</li>
-  </ul>
-  <section class="accueil">
-    <div class="grid-container">
-      <a routerLink="/page1" class="grid-item">
-        <img src="assets/domaine1.png" alt="Image 1">
-      </a>
-      <a routerLink="/page2" class="grid-item">
-        <img src="assets/domaine1.png" alt="Image 2">
-      </a>
-      <a routerLink="/page3" class="grid-item">
-        <img src="assets/domaine1.png" alt="Image 3">
-      </a>
-      <a routerLink="/page4" class="grid-item">
-        <img src="assets/domaine1.png" alt="Image 4">
-      </a>
-    </div>
-
-  </section>
-
-  <div class="partners">
-    <div *ngFor="let partner of partners" class="partner-item">
-      <img [src]="partner.imageUrl" alt="{{ partner.name }}">
-    </div>
+  <div class="accueil-image">
+    <img class="image-accueil responsive-image" src="assets/naccueil.png" alt="Image d'accueil">
   </div>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
+</section>
+<section class="video-section">
+  <video #videoPlayer controls width="50%" height="auto">
+      <source src="assets/it.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<br>
 
-  
-  
+
+<section>
+  <img src="assets/somme2.png" alt="somme" class="image-responsive">
+</section> 
+<ul>
+  <li *ngFor="let specialite of specialites">{{ specialite.nom }}</li>
+</ul>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<section class="accueil">
+  <div class="grid-container">
+    <a routerLink="/page1" class="grid-item">
+      <img src="assets/domaine1.png" alt="Image 1">
+    </a>
+    <a routerLink="/page2" class="grid-item">
+      <img src="assets/domaine1.png" alt="Image 2">
+    </a>
+    <a routerLink="/page3" class="grid-item">
+      <img src="assets/domaine1.png" alt="Image 3">
+    </a>
+    <a routerLink="/page4" class="grid-item">
+      <img src="assets/domaine1.png" alt="Image 4">
+    </a>
+  </div>
+
+</section>
+
+<div class="partners">
+  <div *ngFor="let partner of partners" class="partner-item">
+    <img [src]="partner.imageUrl" alt="{{ partner.name }}">
+  </div>
+</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
