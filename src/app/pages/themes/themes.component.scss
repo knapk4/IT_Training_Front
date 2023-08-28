@@ -14,8 +14,22 @@ image-container {
     padding: 20px; /* Ajoute un espace autour du contenu pour éviter qu'il ne touche les bords de l'écran */
   }
   
+  .image-responsive {
+    width: 100%;
+    height: auto;
+    margin-top: 1px;
+  }
   
-  
+  .responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+
   .menu {
     display: flex;
     flex-direction: column;
