@@ -20,6 +20,28 @@ import { ClientComponent } from './dashboard/client/client.component';
 import { SurthemesComponent } from './pages/surthemes/surthemes.component';
 import { FormationComponent } from './pages/formation/formation.component';
 
+//import { RouterModule, Routes } from '@angular/router'; // Importez RouterModule et Routes
+/*
+const routes: Routes = [
+  { path: '', component: HomePageComponent, pathMatch: 'full' }, // Route par défaut redirigeant vers '/accueil'
+  { path: 'forgot-password', component: ForgotPasswordComponent }, // Exemple de route vers un composant 'ProfileComponent'
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'client', component: ClientComponent },
+  { path: 'formation', component: FormationComponent },
+  { path: 'surthemes', component: SurthemesComponent },
+  { path: 'themes', component: ThemesComponent },
+  
+];
+
+*/
+
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -44,7 +66,9 @@ import { FormationComponent } from './pages/formation/formation.component';
     MatInputModule,
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    //RouterModule.forRoot(routes), // Ajoutez cette ligne pour configurer les routes
+
   ],
   providers: [],
   bootstrap: [AppComponent]
