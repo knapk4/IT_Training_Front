@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'formation', component: FormationComponent },
   { path: 'surthemes', component: SurthemesComponent },
   { path: 'themes', component: ThemesComponent },
- 
+  { path: 'home', component: HomePageComponent},
 
 
 

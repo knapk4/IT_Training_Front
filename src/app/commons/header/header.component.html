@@ -3,12 +3,14 @@
 
   <nav class="navbar">
     <div class="navbar-logo">
-      <img src="assets/logo.png" alt="Logo">
+      <a routerLink="/" style="text-decoration: none;">
+        <img src="assets/logo.png" alt="Logo">
+      </a>
     </div>
     <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
     <label for="navbar-toggle" class="navbar-toggle-label"><i class="fa fa-bars"></i></label>
     <ul class="navbar-menu">
-      <li class="navbar-item"><a href="#" style="color: white; text-decoration: none;"><i class="fa fa-home" style="color: white;"></i> Accueil</a></li>
+      <li class="navbar-item"><a routerLink="/home" style="color: white; text-decoration: none;"><i class="fa fa-home" style="color: white;"></i> Accueil</a></li>
       <li class="navbar-item"><a href="#" style="color: white; text-decoration: none;"><i class="fa fa-chalkboard-teacher white-icon"></i> Nos formations</a></li>
       <li class="navbar-item">
         <a href="#" style="color: white; text-decoration: none;">
