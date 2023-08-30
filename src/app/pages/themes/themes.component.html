@@ -33,6 +33,7 @@
     <div class="themes-container">
     <div class="themes-list">
       <div *ngFor="let formation of visibleFormations" class="theme-card">
+        
         <!-- Afficher les détails de la formation ici (image, nom, prix, date) -->
         <img [src]="formation.imageUrl" alt="Image de la formation" class="formation-image" />
         <h3>{{ formation.nom }}</h3>

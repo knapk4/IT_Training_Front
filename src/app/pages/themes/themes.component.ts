@@ -17,78 +17,78 @@ export class ThemesComponent implements OnInit {
   showAll: boolean = false;
   formations: Formation[] = [
     {
-      imageUrl: 'assets/loo.png',
+      imageUrl: 'assets/javac.png',
       nom: 'JAVA',
-      prix: 200,
+      prix: 5000 ,
       dateDebut: '2023-09-01',
       dateFin: '2023-09-15'
     },
     {
-      imageUrl: 'chemin/vers/image2.jpg',
-      nom: 'Formation React pour les débutants',
-      prix: 150,
+      imageUrl: 'assets/loo.png',
+      nom: 'ANGULAR',
+      prix: 4500,
       dateDebut: '2023-08-15',
       dateFin: '2023-08-30'
     },
     {
-      imageUrl: 'chemin/vers/image3.jpg',
-      nom: 'Formation Vue.js complète',
-      prix: 180,
+      imageUrl: 'assets/c++.png',
+      nom: 'C++',
+      prix: 6000,
       dateDebut: '2023-10-01',
       dateFin: '2023-10-30'
     },
     {
-      imageUrl: 'chemin/vers/image4.jpg',
-      nom: 'Formation Node.js et Express',
-      prix: 220,
+      imageUrl: 'assets/csharp.png',
+      nom: 'c#',
+      prix: 5500,
       dateDebut: '2023-09-20',
       dateFin: '2023-10-10'
     },
     {
-      imageUrl: 'chemin/vers/image5.jpg',
-      nom: 'Formation HTML et CSS pour les débutants',
-      prix: 100,
+      imageUrl: 'assets/react.png',
+      nom: 'REACT',
+      prix: 3500,
       dateDebut: '2023-08-25',
       dateFin: '2023-09-05'
     },
     {
-      imageUrl: 'chemin/vers/image3.jpg',
-      nom: 'Formation Vue.js complète',
-      prix: 180,
+      imageUrl: 'assets/ruby.png',
+      nom: 'RUBY',
+      prix: 4000,
       dateDebut: '2023-10-01',
       dateFin: '2023-10-30'
     },
 
     {
-      imageUrl: 'chemin/vers/image3.jpg',
-      nom: 'Formation nodee complète',
-      prix: 180,
+      imageUrl: 'assets/mysql.png',
+      nom: 'MYSQL',
+      prix: 2000,
       dateDebut: '2021-10-01',
       dateFin: '2023-10-30'
     },
 
 
     {
-      imageUrl: 'chemin/vers/image3.jpg',
-      nom: 'Formation gut complète',
-      prix: 180,
+      imageUrl: 'assets/pyhton.png',
+      nom: 'PYTHON',
+      prix: 8000,
       dateDebut: '2023-10-09',
       dateFin: '2023-10-31'
     },
 
 
     {
-      imageUrl: 'chemin/vers/image3.jpg',
-      nom: 'Formation ji complète',
-      prix: 180,
+      imageUrl: 'assets/ts.png',
+      nom: 'TYPESCRIPT',
+      prix: 5500,
       dateDebut: '2022-05-01',
       dateFin: '2023-10-30'
     },
 
 {
-      imageUrl: 'chemin/vers/image3.jpg',
-      nom: 'Formation csharp complète',
-      prix: 180,
+      imageUrl: 'assets/php.png',
+      nom: 'PHP',
+      prix: 1250,
       dateDebut: '2023-09-01',
       dateFin: '2023-10-05'
     },
