@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  specialites: any[] = [];
+
   partners: any[] = [  
   { name: 'Partner 1', imageUrl: 'assets/url1.jpg' },
   { name: 'Partner 2', imageUrl: 'assets/url2.jpg' }, 
@@ -18,20 +18,20 @@ export class HomePageComponent implements OnInit {
   { name: 'Partner 7', imageUrl: 'assets/url7.jpg' },
   { name: 'Partner 8', imageUrl: 'assets/url8.jpg' },
   { name: 'Partner 9', imageUrl: 'assets/url9.jpg' },
-
-
 ];
+
+formation: any[] = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:8080/specialites/all').subscribe(
-      (data) => {
-        this.specialites = data;
-      },
-      (error) => {
-        console.error('Erreur lors de la récupération des données:', error);
-      }
-    );
+
+  }
+
+  afficherFormateurs() {
+    this.http.get<any[]>('http://localhost:8080/formation/all')
+      .subscribe(data => {
+        this.formation = data;
+      });
   }
 }

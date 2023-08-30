@@ -18,6 +18,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ResponsableLogistiqueComponent } from './dashboard/responsable/responsable-logistique/responsable-logistique.component';
+import { ResponsableCommercialComponent } from './dashboard/responsable/responsable-commercial/responsable-commercial.component';
+import { ResponsableFormationComponent } from './dashboard/responsable/responsable-formation/responsable-formation.component';
+
 
 
 const routes: Routes = [
@@ -30,6 +34,9 @@ const routes: Routes = [
   { path: 'surthemes', component: SurthemesComponent },
   { path: 'themes', component: ThemesComponent },
   { path: 'home', component: HomePageComponent},
+  { path: 'responsablelogistique', component: ResponsableLogistiqueComponent },
+  { path: 'responsablecommercial', component: ResponsableCommercialComponent },
+  { path: 'responsableformation', component: ResponsableFormationComponent},
 
 
 
