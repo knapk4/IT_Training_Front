@@ -18,9 +18,35 @@ import { ForgotPasswordComponent } from './connexion/forgot-password/forgot-pass
 import { RegisterComponent } from './connexion/register/register.component';
 import { ClientComponent } from './dashboard/client/client.component';
 import { SurthemesComponent } from './pages/surthemes/surthemes.component';
+
 import { ResponsableLogistiqueComponent } from './dashboard/responsable/responsable-logistique/responsable-logistique.component';
 import { ResponsableCommercialComponent } from './dashboard/responsable/responsable-commercial/responsable-commercial.component';
 import { ResponsableFormationComponent } from './dashboard/responsable/responsable-formation/responsable-formation.component';
+
+import { FormationComponent } from './pages/formation/formation.component';
+
+//import { RouterModule, Routes } from '@angular/router'; // Importez RouterModule et Routes
+/*
+const routes: Routes = [
+  { path: '', component: HomePageComponent, pathMatch: 'full' }, // Route par défaut redirigeant vers '/accueil'
+  { path: 'forgot-password', component: ForgotPasswordComponent }, // Exemple de route vers un composant 'ProfileComponent'
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'client', component: ClientComponent },
+  { path: 'formation', component: FormationComponent },
+  { path: 'surthemes', component: SurthemesComponent },
+  { path: 'themes', component: ThemesComponent },
+  
+];
+
+*/
+
+
+
+
+
+
+
 
 
 @NgModule({
@@ -36,9 +62,13 @@ import { ResponsableFormationComponent } from './dashboard/responsable/responsab
     RegisterComponent,
     ClientComponent,
     SurthemesComponent,
+
     ResponsableLogistiqueComponent,
     ResponsableCommercialComponent,
     ResponsableFormationComponent,
+
+    FormationComponent,
+
 
   ],
   imports: [
@@ -48,7 +78,9 @@ import { ResponsableFormationComponent } from './dashboard/responsable/responsab
     MatInputModule,
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    //RouterModule.forRoot(routes), // Ajoutez cette ligne pour configurer les routes
+
   ],
   providers: [],
   bootstrap: [AppComponent]

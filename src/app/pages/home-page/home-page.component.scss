@@ -68,9 +68,18 @@
   margin-top: 1px;
 }
 .partner-item img {
-  max-width: 50%;
+  max-width: 30%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .partner-item img {
+    max-width: 40%; /* Adjust the percentage value for smaller screens */
+  }
+}
+
+
+
+
 
 .partners {
   display: flex;
@@ -110,6 +119,80 @@
 
 
 
+.testimonials {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.testimonial {
+  display: flex; /* Display en flex pour aligner l'image et le texte */
+  align-items: center; /* Alignement vertical */
+  overflow: hidden;
+
+  flex-shrink: 0; /* Empêche le rétrécissement des éléments */
+  margin-right: 20px; /* Marge entre les témoignages */
+}
+
+.testimonial-image {
+  width: 50px; /* Largeur de l'image d'avis */
+  height: 50px; /* Hauteur de l'image d'avis */
+  margin-right: 10px; /* Marge à droite de l'image */
+}
+
+.testimonial-image img {
+  width: 100%; /* Ajuste la taille de l'image */
+  height: 100%; /* Ajuste la taille de l'image */
+  object-fit: cover; /* Ajuste l'image pour couvrir la zone */
+  border-radius: 50%; /* Cela ajoute des bords arrondis aux images */
+}
+
+.testimonial p {
+  margin: 0;
+  font-size: 16px; /* Ajustez la taille de la police selon vos préférences */
+  font-weight: bold; /* Met en gras le texte des avis */
+  color: white; /* Met la police d'écriture en blanc */
+
+}
+
+
+.author {
+  font-style: italic; /* Style pour l'auteur */
+  margin-top: 5px; /* Marge au-dessus de l'auteur */
+}
+
+/* Animation de défilement des témoignages */
+@keyframes scrollTestimonials {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 20px)); /* Ajuste pour la marge entre les témoignages */
+  }
+}
+
+.testimonials- {
+  animation: scrollTestimonials 20s linear infinite;
+}
+
+
+.testimonials-container {
+  //display: flex;
+  overflow: hidden; /* Cacher le débordement */
+  white-space: nowrap;
+  margin-top: 20px;
+}
+.nos-themes {
+  text-align: left;
+  margin-left: -1200px; /* Ajustez la marge gauche selon vos préférences */
+  font-size: 35px; /* Ajustez la taille de la police selon vos préférences */
+  color: white;
+  font-weight: bold;
 
 
 
+
+
+
+}
