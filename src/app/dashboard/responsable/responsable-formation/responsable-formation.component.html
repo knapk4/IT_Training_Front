@@ -1,0 +1,38 @@
+
+
+<body>
+      <header>
+        <h1>Tableau de Bord du Responsable Formation</h1>
+      </header>
+      <main>
+        <section class="info-panel">
+          <h2>Évaluations des Sessions</h2>
+          <div id="session-evaluations">
+            <!-- Les évaluations des sessions seront injectées ici -->
+          </div>
+        </section>
+        <section class="info-panel">
+          <h2>Alertes Qualité</h2>
+          <div id="quality-alerts">
+            <!-- Les alertes qualité seront injectées ici -->
+          </div>
+        </section>
+        <section class="info-panel">
+          <h2>Suivi des Formateurs</h2>
+          <div id="trainer-tracking">
+            <h2>Afficher le listing de vos formateurs :</h2>
+              <button (click)="afficherFormateurs()">Afficher les formateurs</button>
+              <button (click)="trierParSpecialite()">Trier par spécialité</button>
+              <button (click)="trierParNote()">Trier par note</button>
+              <ul>
+                <li *ngFor="let formateur of formateurs">
+                  {{ formateur.nom }} - {{ formateur.specialite }}
+                  <button (click)="envoyerMail(formateur)">Envoyer un mail</button>
+                  <button (click)="confirmerFormation(formateur)">Confirmer la formation</button>
+                  <button (click)="attribuerBlame(formateur)">Attribuer un blâme</button>
+                </li>
+              </ul>
+          </div>
+        </section>
+      </main>
+    </body>

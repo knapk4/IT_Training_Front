@@ -18,6 +18,11 @@ import { ForgotPasswordComponent } from './connexion/forgot-password/forgot-pass
 import { RegisterComponent } from './connexion/register/register.component';
 import { ClientComponent } from './dashboard/client/client.component';
 import { SurthemesComponent } from './pages/surthemes/surthemes.component';
+
+import { ResponsableLogistiqueComponent } from './dashboard/responsable/responsable-logistique/responsable-logistique.component';
+import { ResponsableCommercialComponent } from './dashboard/responsable/responsable-commercial/responsable-commercial.component';
+import { ResponsableFormationComponent } from './dashboard/responsable/responsable-formation/responsable-formation.component';
+
 import { FormationComponent } from './pages/formation/formation.component';
 
 //import { RouterModule, Routes } from '@angular/router'; // Importez RouterModule et Routes
@@ -43,6 +48,7 @@ const routes: Routes = [
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +62,13 @@ const routes: Routes = [
     RegisterComponent,
     ClientComponent,
     SurthemesComponent,
+
+    ResponsableLogistiqueComponent,
+    ResponsableCommercialComponent,
+    ResponsableFormationComponent,
+
     FormationComponent,
+
 
   ],
   imports: [

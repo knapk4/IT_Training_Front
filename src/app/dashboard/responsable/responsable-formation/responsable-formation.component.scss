@@ -1,0 +1,77 @@
+
+.app-formateur {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  li button {
+    background-color: #28a745; 
+  }
+  
+  li button:nth-child(2) {
+    background-color: #ffc107;
+  }
+  
+  li button:last-child {
+    background-color: #dc3545;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .info-panel {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .info-panel h2 {
+    margin-top: 0;
+  }
+  
+  #session-evaluations, #quality-alerts, #trainer-tracking {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
