@@ -33,13 +33,14 @@
     <div class="themes-container">
     <div class="themes-list">
       <div *ngFor="let formation of visibleFormations" class="theme-card">
-        
+        <a [routerLink]="['/formation']" class="card-link">
         <!-- Afficher les détails de la formation ici (image, nom, prix, date) -->
         <img [src]="formation.imageUrl" alt="Image de la formation" class="formation-image" />
         <h3>{{ formation.nom }}</h3>
         <p>Prix : {{ formation.prix }}</p>
         <p>Date de début : {{ formation.dateDebut }}</p>
         <p>Date de fin : {{ formation.dateFin }}</p>
+      </a>
       </div>
     </div>
   </div>
