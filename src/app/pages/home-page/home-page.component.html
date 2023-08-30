@@ -15,10 +15,6 @@
 <section>
   <img src="assets/somme2.png" alt="somme" class="image-responsive">
 </section> 
-<ul>
-  <li *ngFor="let specialite of specialites">{{ specialite.nom }}</li>
-</ul>
-
 
 <br>
 <br>
@@ -46,8 +42,18 @@
       <img src="assets/domaine11.png" alt="Image 4">
     </a>
   </div>
-
 </section>
+
+  <!-- <section class="accueil">
+    <div class="grid-container">
+      <div *ngFor="let form of formation" class="grid-item">
+          <img src="assets/domaine11.png" alt="Image 4">
+        <h3>{{ form.titre }}</h3>
+        <p>{{ form.description }}</p>
+        <p>Prix: {{ form.prix }}€</p>
+      </div>
+    </div>
+  </section> -->
 
 
 <div class="testimonials">

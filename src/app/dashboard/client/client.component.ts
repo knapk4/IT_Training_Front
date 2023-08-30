@@ -32,9 +32,5 @@ export class ClientComponent  {
     this.newPassword = '';
   }
   
-
-
-
-
 }
 
