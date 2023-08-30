@@ -25,9 +25,18 @@ export class LoginComponent implements OnInit {
       // Ensuite, en fonction de la valeur de 'username', effectuez la redirection
       if (this.username === 'client') {
         this.router.navigate(['/client']);
-      } else if (this.username === 'login') {
-        this.router.navigate(['/login']);
+      } else if (this.username === 'logistique') {
+        this.router.navigate(['/responsablelogistique']);
       }
+
+      else if (this.username === 'commercial') {
+        this.router.navigate(['/responsablecommercial']);
+      }
+
+      else if (this.username === 'formation') {
+        this.router.navigate(['/responsableformation']);
+      }
+
       else {
         this.router.navigate(['/surthemes']);
       }
