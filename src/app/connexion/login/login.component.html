@@ -1,18 +1,15 @@
 <div class="main-login">
-
-
-    <div class="login-container">
-        <h1>Page de connexion</h1>
-        <form (ngSubmit)="onLoginSubmit()">
-          <label for="username">Nom d'utilisateur :</label>
-          <input type="text" id="username" required>
-      
-          <label for="password">Mot de passe :</label>
-          <input type="password" id="password" required>
-      
-          <button type="submit">Se connecter</button>
-        </form>
-        <a routerLink="/register">S'inscrire</a>
-        <a routerLink="/forgot-password">Mot de passe oublié</a>
-      </div>
-    </div>
+  <div class="login-container">
+    <h1>Page de connexion</h1>
+    <form #loginForm="ngForm" (ngSubmit)="onLoginSubmit(loginForm)">
+      <label for="username">Nom d'utilisateur :</label>
+      <input type="text" id="username" name="username" required [(ngModel)]="username">
+      <!-- Ajoutez le nom pour le champ de mot de passe aussi -->
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required [(ngModel)]="password">
+      <button type="submit">Se connecter</button>
+    </form>
+    <a routerLink="/register">S'inscrire</a>
+    <a routerLink="/forgot-password">Mot de passe oublié</a>
+  </div>
+</div>

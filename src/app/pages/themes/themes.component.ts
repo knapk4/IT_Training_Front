@@ -18,7 +18,7 @@ export class ThemesComponent implements OnInit {
   formations: Formation[] = [
     {
       imageUrl: 'assets/loo.png',
-      nom: 'Formation Zngular avancée',
+      nom: 'JAVA',
       prix: 200,
       dateDebut: '2023-09-01',
       dateFin: '2023-09-15'

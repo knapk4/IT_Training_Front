@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Importez FormsModule
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -67,6 +68,10 @@ const routes: Routes = [
     HttpClientModule,
     FormsModule,
     CommonModule,
+
+
+
+    
     //RouterModule.forRoot(routes), // Ajoutez cette ligne pour configurer les routes
 
   ],
