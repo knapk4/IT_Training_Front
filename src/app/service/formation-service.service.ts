@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'rooooot'
+  providedIn: 'rooot'
 })
 export class FormationServiceService {
 
